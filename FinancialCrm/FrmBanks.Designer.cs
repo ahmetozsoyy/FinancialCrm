@@ -49,16 +49,16 @@
             this.lblIsBalance = new System.Windows.Forms.Label();
             this.lblİsBank = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblBankProcess1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblBankProcess2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblBankProcess5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblBankProcess4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblBankProcess3 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblBankProcess5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblBankProcess2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblBankProcess1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -147,6 +147,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Giderler";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -324,43 +325,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Son 5 banka hareketi";
             // 
-            // lblBankProcess1
+            // label10
             // 
-            this.lblBankProcess1.AutoSize = true;
-            this.lblBankProcess1.Location = new System.Drawing.Point(7, 33);
-            this.lblBankProcess1.Name = "lblBankProcess1";
-            this.lblBankProcess1.Size = new System.Drawing.Size(61, 19);
-            this.lblBankProcess1.TabIndex = 0;
-            this.lblBankProcess1.Text = "Metin 1";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(639, 19);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "---------------------------------------------------------------------------------" +
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 260);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(639, 19);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "---------------------------------------------------------------------------------" +
     "---------------------------------------------";
             // 
-            // label4
+            // lblBankProcess5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(639, 19);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "---------------------------------------------------------------------------------" +
-    "---------------------------------------------";
-            // 
-            // lblBankProcess2
-            // 
-            this.lblBankProcess2.AutoSize = true;
-            this.lblBankProcess2.Location = new System.Drawing.Point(7, 85);
-            this.lblBankProcess2.Name = "lblBankProcess2";
-            this.lblBankProcess2.Size = new System.Drawing.Size(61, 19);
-            this.lblBankProcess2.TabIndex = 2;
-            this.lblBankProcess2.Text = "Metin 2";
+            this.lblBankProcess5.AutoSize = true;
+            this.lblBankProcess5.Location = new System.Drawing.Point(7, 237);
+            this.lblBankProcess5.Name = "lblBankProcess5";
+            this.lblBankProcess5.Size = new System.Drawing.Size(61, 19);
+            this.lblBankProcess5.TabIndex = 8;
+            this.lblBankProcess5.Text = "Metin 5";
             // 
             // label6
             // 
@@ -400,31 +382,50 @@
             this.lblBankProcess3.TabIndex = 4;
             this.lblBankProcess3.Text = "Metin 3";
             // 
-            // label10
+            // label4
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 260);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(639, 19);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "---------------------------------------------------------------------------------" +
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 108);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(639, 19);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "---------------------------------------------------------------------------------" +
     "---------------------------------------------";
             // 
-            // lblBankProcess5
+            // lblBankProcess2
             // 
-            this.lblBankProcess5.AutoSize = true;
-            this.lblBankProcess5.Location = new System.Drawing.Point(7, 237);
-            this.lblBankProcess5.Name = "lblBankProcess5";
-            this.lblBankProcess5.Size = new System.Drawing.Size(61, 19);
-            this.lblBankProcess5.TabIndex = 8;
-            this.lblBankProcess5.Text = "Metin 5";
+            this.lblBankProcess2.AutoSize = true;
+            this.lblBankProcess2.Location = new System.Drawing.Point(7, 85);
+            this.lblBankProcess2.Name = "lblBankProcess2";
+            this.lblBankProcess2.Size = new System.Drawing.Size(61, 19);
+            this.lblBankProcess2.TabIndex = 2;
+            this.lblBankProcess2.Text = "Metin 2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(639, 19);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "---------------------------------------------------------------------------------" +
+    "---------------------------------------------";
+            // 
+            // lblBankProcess1
+            // 
+            this.lblBankProcess1.AutoSize = true;
+            this.lblBankProcess1.Location = new System.Drawing.Point(7, 33);
+            this.lblBankProcess1.Name = "lblBankProcess1";
+            this.lblBankProcess1.Size = new System.Drawing.Size(61, 19);
+            this.lblBankProcess1.TabIndex = 0;
+            this.lblBankProcess1.Text = "Metin 1";
             // 
             // FrmBanks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(923, 553);
+            this.ClientSize = new System.Drawing.Size(920, 550);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
