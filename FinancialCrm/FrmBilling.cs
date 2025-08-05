@@ -75,7 +75,14 @@ namespace FinancialCrm
         {
             FrmBanks frm = new FrmBanks();
             frm.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FrmDashboard frm = new FrmDashboard();
+            frm.Show();
+            this.Close();
         }
     }
 }
